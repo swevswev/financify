@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance</title>
+    <script src="https://kit.fontawesome.com/74dbb61610.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="finance-style.css">
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+</head>
+<body>
+    <div class="top-border" style="margin-top: 0">
+        <a href=homePage.html>
+            <img src="financify.png" class="centerImg">
+        </a>
+    </div>
+    <div>
+        <h1 style="text-align: center;"> Financial indepedence is one search away!</h1>
+    </div>
+        <form id="myChat">
+            <div class="chat-container">
+                <div class="message ai-message">
+                    <p id = "p1"></p>
+                </div>
+                <div class="chat-input-container">
+                    <input type = "text" id = "question" name = "question" placeholder="  Type your message" class="chatbox">
+                    <br>
+                    <button type="submit"  class="my-button">Send</button>
+                </div>
+                </div>
+            </div>
+        </form>     
+        <script type="module" src="firebase.js"></script>
+        <script type="module" src="driver.js"></script>
+        <script type="module" src="finance.js"></script>
+</body>
+</html>

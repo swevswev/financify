@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/74dbb61610.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="survey-style.css">
+    <title>Document</title>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-firestore.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-database.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.22.1/firebase-auth.js"></script>
+</head>
+<body>
+    <body id="survey-section">
+        <div class="top-border">
+            <a href=homePage.html>
+                <img src="financify.png" class="centerImg">
+            </a>
+        </div>
+    
+
+    <br>
+    
+    <form id="mySurvey">
+        <div id="age-section">
+            <label for="age">Age:</label>
+            <input type = "text" id = "age-el" name = "age" placeholder="00">
+        </div>
+    
+        <br>
+        <div id="income-section">
+            <label for="income">Income:</label>
+            <input type = "text" id = "income-el" name = "income" placeholder="10,000">
+        </div>
+        <br>
+        <div id="account-section">
+            <label type = "accountType">Banking Account Type:</label>
+            <select id="accountType" name = "accountType">
+                <option value = "checking">Checking</option>
+                <option value = "saving">Saving</option>
+                <option value = "brokerage">Brokerage</option>
+            </select>
+        </div>
+        <br>
+        <!--choosing states-->
+        <div id="state-section">
+            <label type="state">State currently residing:</label>
+            <select id="state" name="state">
+                <option value="Alabama">AL</option>
+                <option value="Alaska">AK</option>
+                <option value="Arizona">AZ</option>
+                <option value="Arkansas">AR</option>
+                <option value="California">CA</option>
+                <option value="Colorado">CO</option>
+                <option value="Connecticut">CT</option>
+                <option value="Delaware">DE</option>
+                <option value="Florida">FL</option>
+                <option value="Georgia">GA</option>
+                <option value="Guam">GU</option>
+                <option value="Hawaii">HI</option>
+                <option value="Idaho">ID</option>
+                <option value="Illinois">IL</option>
+                <option value="Indiana">IN</option>
+                <option value="Iowa">IA</option>
+                <option value="Kansas">KS</option>
+                <option value="Kentucky">KY</option>
+                <option value="Louisiana">LA</option>
+                <option value="Maine">ME</option>
+                <option value="Maryland">MD</option>
+                <option value="Massachusetts">MA</option>
+                <option value="Michigan">MI</option>
+                <option value="Minnesota">MN</option>
+                <option value="Mississippi">MS</option>
+                <option value="Missouri">MO</option>
+                <option value="Montana">MT</option>
+                <option value="Nebraska">NE</option>
+                <option value="Nevada">NV</option>
+                <option value="New Hampshire">NH</option>
+                <option value="New Jersey">NJ</option>
+                <option value="New Mexico">NM</option>
+                <option value="New York">NY</option>
+                <option value="North Carolina">NC</option>
+                <option value="North Dakota">ND</option>
+                <option value="Ohio">OH</option>
+                <option value="Oklahoma">OK</option>
+                <option value="Oregon">OR</option>
+                <option value="Pennsylvania">PA</option>
+                <option value="Puerto Rico">PR</option>
+                <option value="Rhode Island">RI</option>
+                <option value="South Carolina">SC</option>
+                <option value="South Dakota">SD</option>
+                <option value="Tennessee">TN</option>
+                <option value="Texas">TX</option>
+                <option value="Utah">UT</option>
+                <option value="Vermont">VT</option>
+                <option value="Virginia">VA</option>
+                <option value="Winconsin">WI</option>
+                <option value="Wyoming">WY</option>
+                
+            </select>
+        </div>
+        <br>
+        <div id="loan-section">
+            <label type="loan">Do you plan on loaning? (Check if Yes):</label>
+            <input type="checkbox" id="loan" name = "loan">
+        </div>
+    
+        <button type="submit" class="my-button">Submit</button>
+        <br>
+        
+        <input type="reset" value="Reset">
+        
+        <br>
+        
+        
+    </form>
+
+    <a href="finance.html">
+        <button class="my-button" >Get Financial Info</button>
+    </a>
+
+    
+    <script type="module" src="firebase.js"></script>
+        <script type="module" src="driver.js"></script>
+        <script type="module" src="survey.js"></script>
+
+</body>
+</html>

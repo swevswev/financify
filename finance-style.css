@@ -1,0 +1,173 @@
+/* CSS Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left horizontally */
+    align-items: center; /* Center items vertically */
+    flex-direction: column;
+    background-image: url("flower.jpg");
+  }
+  
+    h1{
+        color: white;
+        font-size: 40px;
+      font-weight: 1000;
+      font-family:Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    }
+  
+    .top-border{
+      display: block;
+      width: 35%;
+      background-color: rgb(53,78,173);
+      border-radius: 25px;
+  }
+  
+  .centerImg{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 25%;
+      margin-top: 0%;
+  }
+  
+  .chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 650px;
+    width: 800px;
+    margin: auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Message Bubbles */
+  .message {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  /* Assistant Message */
+  .assistant-message {
+    align-self: flex-start;
+    background-color: #e3e3e3;
+    color: #333;
+    border-bottom-left-radius: 0;
+  }
+  
+  /* Chat Input Container */
+  .chat-input-container {
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgb(53,78,173);
+    border-color: white;
+  }
+  
+  /* Chat Input Field */
+  .chat-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .send-button:hover {
+    background-color: #005bb5;
+  }
+  .my-button {
+    background-color: #5e748c;
+    margin: 10px auto; /* Center horizontally */
+    width: 100px; /* Fixed width */
+    height: 40px; /* Fixed height */
+    text-align: center; /* Center text horizontally */
+    line-height: 40px; /* Match line height to button height for vertical centering */
+    border-radius: 25px; /* Rounded corners */
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: bolder;
+    font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+    cursor: pointer; /* Pointer cursor for interactivity */
+    text-decoration: none; /* Removes underline */
+  }
+  
+  .my-button:hover {
+    background-color: #4370a0; /* Slightly darker blue on hover */
+  }
+  
+    .chatbox{
+      width: 600px;
+      height: 30px;
+      background: #ffffff;
+      border-radius: 25px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      margin-bottom: 0;
+    }
+    
+    .chat-log {
+      display: block;
+      background-color: #ffffff;
+      border-radius: 25px;
+      padding: 10px;
+      height: 800px;
+      overflow-y: auto;
+      border-bottom: 1px solid #000000;
+    }
+    
+    .message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 50px;
+    }
+    
+    .user-message {
+      background-color: #2344c7;
+      align-self: flex-end;
+      text-size-adjust: auto;
+      height: 50px;
+    }
+    
+    .ai-message {
+        background-color: #90ade8;
+        align-self: flex-start;
+        min-width: 50px; /* Minimum width for the text box */
+        max-width: 75%; /* Make sure it doesn't stretch too wide */
+        height: auto;
+        padding: 10px;  /* Padding for some space inside the box */
+        overflow: hidden; /* Optional: Hide overflow if it extends too far */
+        display: inline-block; /* Allow it to scale with content */
+      }
+    
+    .chat-input {
+      display: flex;
+      border-top: 1px solid #e5e7eb;
+      background-color: #f9fafb;
+    }
+    
+    .chat-input input {
+      flex: 1;
+      border: none;
+      padding: 10px;
+      font-size: 14px;
+      border-radius: 0;
+    }
+    
+    .chat-input input:focus {
+      outline: none;
+    }
