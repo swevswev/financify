@@ -5,7 +5,7 @@ import { db, realTimeDb } from './firebase.js';
 
 const MAX_MESSAGE_HISTORY = 20;
 const AI_INSTRUCTIONS = "You are a financial assistant primarily focused on advising clients about banking options. Make sure to list your sources and the authors for each source of information that you provide. Personalize your information based on the user's input data provided if relevant. Read the message history first before sending and ignore any irrelevant messages to the topic.";
-const API_KEY = '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'; // Replace with your actual OpenAI API key
+const API_KEY = 
 const API_URL = "https://api.openai.com/v1/chat/completions";
 
 async function askOpenAI(messages) {
@@ -207,4 +207,5 @@ export async function loginOrSignUp(newUserStatus, email, password) {
 //on account creation:
 //console.log(addUser("blowbiden@gmail.com"));
 //updateUser("blowbiden@gmail.com", {name: "Joe Biden"});
+
 //console.log("FORTNITE: ", chatInput("blowbiden@gmail.com", "give me some info about interest rates from your dataset"));
